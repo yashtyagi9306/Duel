@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 import Container from "./Container";
 
 function Hero() {
@@ -49,10 +50,10 @@ function Hero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="mt-10 flex flex-col sm:flex-row items-center gap-4"
         >
-          <button className="group inline-flex items-center gap-2 rounded-full bg-white text-black px-6 py-3 text-sm font-medium transition-transform duration-300 hover:scale-[1.03]">
+          <Link to="/create" className="group inline-flex items-center gap-2 rounded-full bg-white text-black px-6 py-3 text-sm font-medium transition-transform duration-300 hover:scale-[1.03]">
             Start Debating
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
-          </button>
+          </Link>
           <button className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-white transition-colors duration-300 hover:bg-white/5">
             <Play className="h-4 w-4" />
             Watch Demo
